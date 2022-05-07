@@ -105,7 +105,9 @@
          var a = document.getElementById("a"); //helps to easily find the canvas element
           var context = a.getContext("2d"); //draws the 2d image on the canvas
           
-          
+         var imageData = context.getImageData(0, 0, 600, 300); //puts the image on the canvas at the coordinates with (x value, y value, width, height)
+         
+         
         } // end of img.onload
         
         img.src = reader.result;
