@@ -109,6 +109,9 @@
           var data = imageData.data; //connects pixel data to canvas
          
          for(var i = 0, n = data.length; i < n; i += 4) { //creates function to assign values to colors
+          data[i] = 0; //sets the intensity of red to 0
+          data[i+1] = 0; //sets the intensity of green to 0
+         
          }
          
         } // end of img.onload
