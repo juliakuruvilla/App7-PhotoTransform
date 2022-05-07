@@ -108,6 +108,9 @@
          var imageData = context.getImageData(0, 0, 600, 300); //puts the image on the canvas at the coordinates with (x value, y value, width, height)
           var data = imageData.data; //connects pixel data to canvas
          
+         for(var i = 0, n = data.length; i < n; i += 4) { //creates function to assign values to colors
+         }
+         
         } // end of img.onload
         
         img.src = reader.result;
