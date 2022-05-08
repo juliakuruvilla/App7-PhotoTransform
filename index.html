@@ -105,7 +105,7 @@
          var canvasBlue = document.getElementById('myCanvasBlue'); //helps to easily find the canvas element
           var contextBlue = canvasBlue.getContext("2d"); //draws the 2d image on the canvas
           
-         var imageData = context.getImageData(0, 0, 600, 300); //puts the image on the canvas at the coordinates with (x value, y value, width, height)
+         var imageData = context.getImageData(0, 0, 600, 500); //puts the image on the canvas at the coordinates with (x value, y value, width, height)
           var data = imageData.data; //connects pixel data to canvas
          
          for(var i = 0, n = data.length; i < n; i += 4) { //creates function to assign values to colors
@@ -135,7 +135,7 @@
  <body>
   <div data-role="page">
     <div data-role="header">
-    <h1>Primary Colors</h1></div><!-- /header -->
+    <h1>App 7 Photo Transform</h1></div><!-- /header -->
     <div data-role="content">	
       <h2>Push button to take picture.</h2>
       <div>
@@ -144,22 +144,22 @@
       </div>
       <div id="messageDisplayArea"></div>
       
-      <canvas id="myCanvas" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>
+      <canvas id="myCanvas" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas> <!--creates the first canvas and shows details of canvas specifics-->
       <script> // This script initiates the first canvas
-        var canvas = document.getElementById('myCanvas');
-        var context = canvas.getContext("2d");
-        context.font = '20pt Calibri';
-        context.fillStyle = "black";
-        context.fillText("Original image will go here", 100, 200);
+        var canvas = document.getElementById('myCanvas'); //calls 'myCanvas' and adds it to the canvas element
+        var context = canvas.getContext("2d"); //displays a 2d image on the canvas
+        context.font = '20pt Calibri'; //sets the font type and size
+        context.fillStyle = "black"; //sets the color fill of the text
+        context.fillText("Original image will go here", 150,250); //adds the text to the canvas with ("text", x value, y value)
       </script>
      
-     <canvas id="myCanvasBlue" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>  /*creates the second canvas and shows details of canvas specifics*/
+     <canvas id="myCanvasBlue" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>  <!--creates the second canvas and shows details of canvas specifics-->
      <script> /* This script initiates the canvas and puts the text on the canvas "myCanvas" */
-        var canvas = document.getElementById('myCanvasBlue');
-        var context = canvas.getContext("2d");
-        context.font = '20pt Calibri';
-        context.fillStyle = "black";
-        context.fillText("New image will go here", 100, 200);
+        var canvas = document.getElementById('myCanvasBlue'); //calls 'myCanvasBlue' and adds it to the canvas element
+        var context = canvas.getContext("2d"); //displays a 2d image on the canvas
+        context.font = '20pt Calibri'; //sets the font type and size
+        context.fillStyle = "black"; //sets the color fill of the text
+        context.fillText("New image will go here", 150,250); //adds the text to the canvas with ("text", x value, y value)
       </script>
 
     </div><!-- /content -->
