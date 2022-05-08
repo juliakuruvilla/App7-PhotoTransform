@@ -155,11 +155,11 @@
      
      <canvas id="myCanvasBlue" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>  <!--creates the second canvas and shows details of canvas specifics-->
      <script> /* This script initiates the canvas and puts the text on the canvas "myCanvas" */
-        var canvas = document.getElementById('myCanvasBlue'); //calls 'myCanvasBlue' and adds it to the canvas element
-        var context = canvas.getContext("2d"); //displays a 2d image on the canvas
-        context.font = '20pt Calibri'; //sets the font type and size
-        context.fillStyle = "black"; //sets the color fill of the text
-        context.fillText("New image will go here", 150,250); //adds the text to the canvas with ("text", x value, y value)
+        var canvasBlue = document.getElementById('myCanvasBlue'); //calls 'myCanvasBlue' and adds it to the canvas element
+        var contextBlue = canvasBlue.getContext("2d"); //displays a 2d image on the canvas
+        contextBlue.font = '20pt Calibri'; //sets the font type and size
+        contextBlue.fillStyle = "black"; //sets the color fill of the text
+        contextBlue.fillText("New image will go here", 150,250); //adds the text to the canvas with ("text", x value, y value)
       </script>
 
     </div><!-- /content -->
