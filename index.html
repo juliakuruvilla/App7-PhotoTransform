@@ -102,7 +102,7 @@
 
           /* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
           
-         var a = document.getElementById("a"); //helps to easily find the canvas element
+         var canvasb = document.getElementById("a"); //helps to easily find the canvas element
           var context = a.getContext("2d"); //draws the 2d image on the canvas
           
          var imageData = context.getImageData(0, 0, 600, 300); //puts the image on the canvas at the coordinates with (x value, y value, width, height)
@@ -152,6 +152,9 @@
         context.fillStyle = "black";
         context.fillText("Original image will go here", 10, 20);
       </script>
+     
+     <canvas id="canvasb" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>  //creates the second canvas and shows details of canvas specifics
+     
 
     </div><!-- /content -->
     <div data-role="footer" data-position="fixed">
