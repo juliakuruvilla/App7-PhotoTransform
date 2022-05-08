@@ -135,14 +135,19 @@
  <body>
   <div data-role="page">
     <div data-role="header">
+     
     <h1>App 7 Photo Transform</h1></div><!-- /header -->
+   
     <div data-role="content">	
+     
       <h2>Push button to take picture.</h2>
+     
       <div>
         Press orange button to create or choose image file:
         <input type="file" id="fileInput" STYLE="background-color: #FF6600;">
       </div>
-      <div id="messageDisplayArea"></div>
+      
+     <div id="messageDisplayArea"></div>
       
       <canvas id="myCanvas" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas> <!--creates the first canvas and shows details of canvas specifics-->
       <script> // This script initiates the first canvas
@@ -150,7 +155,7 @@
         var context = canvas.getContext("2d"); //displays a 2d image on the canvas
         context.font = '20pt Calibri'; //sets the font type and size
         context.fillStyle = "black"; //sets the color fill of the text
-        context.fillText("Original image will go here", 150,250); //adds the text to the canvas with ("text", x value, y value)
+        context.fillText("Original image will go here", 150,250 ); //adds the text to the canvas with ("text", x value, y value)
       </script>
      
      <canvas id="myCanvasBlue" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>  <!--creates the second canvas and shows details of canvas specifics-->
