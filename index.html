@@ -102,7 +102,7 @@
 
           /* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
           
-         var canvasb = document.getElementById("a"); //helps to easily find the canvas element
+         var myCanvas = document.getElementById("a"); //helps to easily find the canvas element
           var context = a.getContext("2d"); //draws the 2d image on the canvas
           
          var imageData = context.getImageData(0, 0, 600, 300); //puts the image on the canvas at the coordinates with (x value, y value, width, height)
@@ -145,16 +145,22 @@
       <div id="messageDisplayArea"></div>
       
       <canvas id="myCanvas" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>
-      <script> /* This script initiates the cavas and puts the text on the canvas "myCanvas" */
+      <script> // This script initiates the first canvas
         var canvas = document.getElementById('myCanvas');
         var context = canvas.getContext("2d");
         context.font = '20pt Calibri';
         context.fillStyle = "black";
-        context.fillText("Original image will go here", 10, 20);
+        context.fillText("Original image will go here", 100, 200);
       </script>
      
-     <canvas id="canvasb" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>  //creates the second canvas and shows details of canvas specifics
-     
+     <canvas id="a" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>  //creates the second canvas and shows details of canvas specifics
+     <script> /* This script initiates the canvas and puts the text on the canvas "myCanvas" */
+        var canvas = document.getElementById('a');
+        var context = canvas.getContext("2d");
+        context.font = '20pt Calibri';
+        context.fillStyle = "black";
+        context.fillText("New image will go here", 100, 200);
+      </script>
 
     </div><!-- /content -->
     <div data-role="footer" data-position="fixed">
