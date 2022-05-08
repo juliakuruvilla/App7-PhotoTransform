@@ -102,8 +102,8 @@
 
           /* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
           
-         var canvasBlue = document.getElementById("myCanvasBlue"); //helps to easily find the canvas element
-          var contextBlue = a.getContext("2d"); //draws the 2d image on the canvas
+         var canvasBlue = document.getElementById('myCanvasBlue'); //helps to easily find the canvas element
+          var contextBlue = canvasBlue.getContext("2d"); //draws the 2d image on the canvas
           
          var imageData = context.getImageData(0, 0, 600, 300); //puts the image on the canvas at the coordinates with (x value, y value, width, height)
           var data = imageData.data; //connects pixel data to canvas
